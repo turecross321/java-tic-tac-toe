@@ -17,55 +17,7 @@ public class Main {
 			{' ', ' ', ' '}
 	};
 	public static String result;
-	
-	public static void main(String[] args) {
-		
-		boolean gameRunning = true;
-		
-		Random random = new Random();
-		
-		while (gameRunning) {
-			printGameBoard();
-			
-			
-			// user input
-			Scanner scanner = new Scanner(System.in);
-			System.out.println("Enter your placement (1-9):");
-			int player1Pos = scanner.nextInt();
-			
-			// check if position is already taken
-			
-			while (player1Moves.contains(player1Pos) || player2Moves.contains(player1Pos)) {
-				scanner = new Scanner(System.in);
-				
-				System.out.println("some goon is already there. try again (1-9):");
-				player1Pos = scanner.nextInt();
-			}
-			placePiece(player1Pos, 'X');
-			
-			if (!checkGameStatus()) {
-				gameRunning = false;
-				break;	
-			}
-					
-			// CPU input
-			
-			int player2Pos = random.nextInt(1, 9);
-			
-			// check if position is already taken
-			
-			while (player1Moves.contains(player2Pos)  || player2Moves.contains(player2Pos)) {
-				player2Pos = random.nextInt(1, 9);
-			}
-			placePiece(player2Pos, 'O');
-			
-			if (!checkGameStatus()) {
-				gameRunning = false;
-				break;	
-			}
-		}
-	}
-	
+
 	public static void pressButton(int button) {		
 		if (!checkGameStatus() || player1Moves.contains(button) || player2Moves.contains(button))
 			return;
