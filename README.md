@@ -1,6 +1,6 @@
-# java-tic-tac-toe
+# Java Tic-tac-toe
 
-tic tac toe recreated in java
+Tic-tac-toe recreated in Java
 
 the cpu player picks what thing to take completely at random👍👍
 
