@@ -37,6 +37,7 @@ public class Visuals extends JFrame {
 				try {
 					frame = new Visuals();
 					frame.setVisible(true);
+					frame.setTitle("aaaaaaa");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
