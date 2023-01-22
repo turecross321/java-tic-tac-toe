@@ -4,4 +4,4 @@ Tic-tac-toe recreated in Java
 
 the cpu player picks what thing to take completely at random👍👍
 
-![image](https://user-images.githubusercontent.com/51852312/213920657-4a6d8313-9347-4304-a293-17ace13d7c8d.png)
+![image](https://user-images.githubusercontent.com/51852312/213921203-cdcd6c2d-3c11-4332-b129-413a0bfe4a40.png)
